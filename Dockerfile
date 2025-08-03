@@ -9,4 +9,5 @@ ENV N8N_BASIC_AUTH_ACTIVE=true \
 
 EXPOSE 5678
 
-CMD ["n8n", "start"]
+ENTRYPOINT ["tini", "--"]
+CMD ["n8n"]
